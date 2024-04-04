@@ -1,0 +1,12 @@
+.gap{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.mediumGap{
+  gap: 1.2rem;
+}
+.largeGap{
+  gap: 1.8rem;
+}

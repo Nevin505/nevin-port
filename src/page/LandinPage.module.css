@@ -1,0 +1,78 @@
+.rightSectionImageDiv{
+     flex: 1  0 22.5rem ;
+     max-width: 28rem;
+     display: flex;
+     align-items: center;
+    border: 2px solid red;
+    margin-inline: auto;
+    & img{
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+.rightSectionSecondDiv{
+    flex: 2 0  24.5rem ;
+    width: 50%;
+    padding-inline: 4rem;
+    padding-top: 6rem; 
+
+    & .headingStyle{
+          color: var(--secondary);
+          font-size:2.4rem;
+          text-align: center;
+    }
+
+    & .subheadingStyle , & .pStyle{
+        color: var(--ternary);
+        text-align: center;
+
+    }
+
+    & .pStyle{
+        text-align: center;
+       line-height: 2rem;
+    }
+
+}
+.buttonStyle{
+    align-self: center;
+}
+
+@media (max-width:1200px){
+
+    .rightSectionImageDiv{
+         flex-basis: 20rem;
+    }
+    .rightSectionSecondDiv{
+        /* padding-inline: 0.4rem;
+        padding-top: 2rem;
+        flex-basis: auto; */
+        &  .headingStyle{
+            font-size: xx-large;
+        }
+    }
+   
+    .subheadingStyle{
+        font-size: larger;
+    }
+}
+@media (max-width:800px){
+
+    .rightSectionImageDiv{
+         flex-basis: 18rem;
+         width: 18rem;
+    }
+    .rightSectionSecondDiv{
+        padding-inline: 0.4rem;
+        padding-top: 2rem;
+        flex-basis: auto;
+        &  .headingStyle{
+            font-size: x-large;
+        }
+    }
+   
+    .subheadingStyle{
+        font-size: larger;
+    }
+}
