@@ -1,0 +1,25 @@
+.detailDiv{
+   margin-inline: auto;
+   width:max-content;
+   padding-block: 0.2rem;
+   /* align-self: center; */
+   /* border: red 2px solid; */
+   /* text-align: center; */
+   /* border: red 2px solid; */
+}
+.label{
+   color: #BBBBBB;
+   font-size: large;
+}
+.span{
+  color: var(--ternary);
+  font-size: large;
+  width: 100%;  
+  /* border: 2px blue solid; */
+}
+@media (max-width:600px){
+   .detailDiv{
+      /* flex:1 0; */
+      width:18rem;
+   }   
+}

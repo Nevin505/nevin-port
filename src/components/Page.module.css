@@ -1,3 +1,5 @@
 .pageDesigin{
     padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
 }

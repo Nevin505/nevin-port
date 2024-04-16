@@ -1,21 +1,21 @@
 .down{
     position: relative;
     color: #222222;
-    font-size: clamp(1rem,8vw,7rem);
-    letter-spacing: 0.6rem;
+    font-size: 6.4rem;
+    letter-spacing: 0.7rem;
     font-weight: 900;
     text-align: center;
-     max-width: max-content;
+    width:40rem;
      margin-inline: auto;
      text-transform: uppercase;
   }
   .up{
     position: absolute;
     color: var(--ternary);
-    font-size: clamp(0.6rem,4vw,3rem);
-    letter-spacing: 0rem;
-    top: 34%;
-    left: 26%;
+    font-size: 2.6rem;
+    top: 36%;
+    left: 28%;
+    letter-spacing:0;
     text-transform: uppercase;
   }
   .spanUpperDeisgin{
@@ -25,10 +25,38 @@
   .up{
     top: 30%;
   }
+  .down{
+    font-size:5.4rem;
+  }
  }
- @media (max-width:400px){
+
+ @media (max-width:800px){
+  .down{
+
+    width:20rem;  
+
+  font-size: 2.7rem;        
+  }
   .up{
-    top: 26%;
+    font-size: 1.3rem;
+    top: 29%;
+    left:27%
+  }
+ }
+
+
+ @media (max-width:400px){
+  .down{
+    letter-spacing: 0.4rem;
+  
+    width:20rem;  
+
+  font-size: 2.4rem;        
+  }
+  .up{
+    font-size: 1.3rem;
+    top: 31%;
+    left:30%
   }
  }
 

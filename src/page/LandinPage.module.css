@@ -3,7 +3,7 @@
      max-width: 28rem;
      display: flex;
      align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-inline: auto;
     & img{
         width: 100%;
@@ -19,7 +19,7 @@
 
     & .headingStyle{
           color: var(--secondary);
-          font-size:2.4rem;
+          font-size:2.2rem;
           text-align: center;
     }
 
@@ -38,16 +38,105 @@
 .buttonStyle{
     align-self: center;
 }
+a{
+    color:white;
+    text-decoration:none;
 
+}
+.skillDiv{
+    border:1px solid var(--ternary);
+    border-radius:0.75rem;
+    padding:1rem ;
+    width:8.5rem;
+    height: 3.6rem;
+    cursor: pointer;
+    display: flex;
+    justify-content:center;
+    gap: 0.2rem;
+   
+    & img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+
+/* Projects With Hover */
+.projectSkillsCard{
+    border:2px solid  var(--ternary);
+    border-radius: 1.2rem;
+    max-width:20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:0.6rem;
+    padding-block:0 0.4rem;
+    text-align: center;
+    font-size: medium;
+    overflow: hidden; 
+    & p{
+       text-align: start;
+       padding-inline: 1rem;
+      color: var(--secondary);
+    }
+    & img{
+      width: 100%;
+      height: fit-content;
+      object-fit: contain;
+    }   
+
+
+    .innerPhover{
+        display:flex;
+        height:100%;
+        flex-direction:column;
+        justify-content:space-between;
+        gap:0.5rem;
+
+        
+    }
+   
+  }
+
+  form{
+    /* border: 2px solid red; */
+  }
+ 
+  @media(hover){
+    .projectSkillsCard{
+      height: 16.5rem;
+      transition:all 450ms ease;
+    } 
+    .phover{
+      display: none;
+      height:100%;
+    }
+    .projectSkillsCard:hover{
+      transform: scale(1.1);
+       background-image:linear-gradient(white,black);
+      box-shadow: white 0.4rem 0.1rem 0.4rem  ; 
+    }
+    
+    .projectSkillsCard:hover img{
+      display: none;
+    }
+    
+    
+    .projectSkillsCard:hover .phover{
+      display: block;
+      /* gap:1rem;   */
+    }
+    .sectionPage {
+      background-image: linear-gradient(-111deg, var(--primary) 68%, var(--secondary) calc(30% + 2px));
+      }
+  }
 @media (max-width:1200px){
 
     .rightSectionImageDiv{
          flex-basis: 20rem;
     }
     .rightSectionSecondDiv{
-        /* padding-inline: 0.4rem;
-        padding-top: 2rem;
-        flex-basis: auto; */
         &  .headingStyle{
             font-size: xx-large;
         }
@@ -74,5 +163,20 @@
    
     .subheadingStyle{
         font-size: larger;
+    }
+
+    .projectSkillsCard{
+        margin-inline:auto;
+      & img{
+        width:100%;
+    }
+}
+    
+}
+@media (max-width:400px){
+    .skillDiv{
+      padding:0.7rem;
+      width:7.6rem;
+      height:2.6rem;
     }
 }

@@ -4,7 +4,7 @@ export default function OverlappingHeading({downLayerContent,upperLayerContent,s
       <div className={OverlappingHeadingStyle.down}>
         {downLayerContent}
         <div className={OverlappingHeadingStyle.up}>
-          {upperLayerContent}<span className={OverlappingHeadingStyle.spanUpperDeisgin}>{spanUpperLyer}</span></div>
+          {upperLayerContent} <span className={OverlappingHeadingStyle.spanUpperDeisgin}>{spanUpperLyer}</span></div>
       </div>
   );
 }

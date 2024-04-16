@@ -11,6 +11,7 @@
     background-color: var(--primary);
     top: 0;
     z-index: 4;
+    /* border: green 2px solid; */
   }
 
 .navStyle li{
